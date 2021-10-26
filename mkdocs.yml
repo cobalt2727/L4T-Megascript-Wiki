@@ -1,0 +1,64 @@
+site_name: L4T Megascript Wiki
+repo_url: https://github.com/cobalt2727/L4T-Megascript-Wiki
+site_url: https://cobalt2727.github.io/L4T-Megascript-Wiki
+plugins:
+  - git-revision-date-localized:
+      type: datetime
+      fallback_to_build_date: true
+  # ## uncomment this in the future when the social cards feature is no longer insider-only
+  # - social:
+  #     cards: !ENV [SOCIAL_CARDS, false]
+  #     cards_color:
+  #       fill: "#0047AB"
+  #       text: "#FFFFFF"
+
+theme:
+  features:
+    - header.autohide
+  font:
+    text: Roboto
+    code: Consolas
+  icon:
+    repo: fontawesome/brands/github
+  favicon: images/L4T_Megascript-logo-transparent.png
+  logo: images/L4T_Megascript-logo-transparent.png
+
+  name: material
+
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: blue
+      accent: red
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: red
+      accent: blue
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+
+extra:
+  generator: true #       :)
+
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/cobalt2727/L4T-Megascript
+      name: Our source code
+    - icon: fontawesome/brands/discord
+      link: https://discord.gg/abgW2AG87Z
+      name: Our Discord server
+    - icon: fontawesome/solid/hashtag
+      link: https://switchroot.org
+      name: Switchroot's official website
+    - icon: fontawesome/solid/percent
+      link: https://discord.gg/53mtKYt
+      name: Linux4Switch Discord server (secondary Switchroot server)
+
+  # analytics: #if we ever want to track page visits, NOTHING ELSE IS NEEDED
+  #   provider: google
+  #   property: G-{placeholder}
